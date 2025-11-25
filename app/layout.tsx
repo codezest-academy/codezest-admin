@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {
-  Inter,
+  Plus_Jakarta_Sans,
   Crimson_Pro,
   Manrope,
   Space_Grotesk,
@@ -8,7 +8,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-primary",
   display: "swap",
@@ -57,13 +57,14 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={`
-      ${inter.variable} 
+      ${plusJakartaSans.variable} 
       ${crimsonPro.variable} 
       ${manrope.variable} 
       ${spaceGrotesk.variable} 
       ${jetbrainsMono.variable}
     `}
     >
+      <head />
       <body
         suppressHydrationWarning
         className="font-primary antialiased bg-neutral-50 text-neutral-900 min-h-screen"

@@ -69,7 +69,15 @@ const recentSales = [
 
 export default function DashboardPage() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
+      {/* Page Header */}
+      <div>
+        <h1 className="text-4xl font-bold text-neutral-900">Dashboard</h1>
+        <p className="text-neutral-600 mt-2">
+          Welcome back! Here's your overview.
+        </p>
+      </div>
+
       {/* Stats Grid */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>

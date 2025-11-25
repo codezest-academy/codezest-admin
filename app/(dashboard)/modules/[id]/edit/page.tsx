@@ -38,14 +38,14 @@ export default function EditModulePage({ params }: PageProps) {
         const response = await fetch(`/api/modules/${moduleId}`);
 
         if (response.ok) {
-          const module = await response.json();
+          const moduleData = await response.json();
           setInitialData({
-            languageId: module.languageId,
-            title: module.title,
-            slug: module.slug,
-            description: module.description || "",
-            syllabus: module.syllabus || "",
-            order: module.order,
+            languageId: moduleData.languageId,
+            title: moduleData.title,
+            slug: moduleData.slug,
+            description: moduleData.description || "",
+            syllabus: moduleData.syllabus || "",
+            order: moduleData.order,
           });
         } else {
           toast.error("Module not found");

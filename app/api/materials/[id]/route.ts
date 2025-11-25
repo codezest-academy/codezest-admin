@@ -104,7 +104,7 @@ export async function PUT(
       data: {
         moduleId: data.moduleId,
         title: data.title,
-        type: data.type as any,
+        type: data.type,
         content: data.content,
         duration: data.duration || null,
         order: data.order,

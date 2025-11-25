@@ -101,7 +101,7 @@ export async function PUT(
     }
 
     // Update quiz in a transaction
-    const quiz = await prisma.$transaction(async (tx) => {
+    const quiz = await prisma.$transaction(async (tx: PrismaClient) => {
       // Update quiz details
       const updatedQuiz = await tx.mCQQuiz.update({
         where: { id },

@@ -264,7 +264,7 @@ export function QuizTable({ quizzes, onDelete }: QuizTableProps) {
           <DialogHeader>
             <DialogTitle>Delete Quiz</DialogTitle>
             <DialogDescription>
-              Are you sure you want to delete "{quizToDelete?.title}"? This
+              Are you sure you want to delete &quot;{quizToDelete?.title}&quot;? This
               action cannot be undone and will delete all questions and options.
             </DialogDescription>
           </DialogHeader>

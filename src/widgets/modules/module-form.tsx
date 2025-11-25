@@ -102,12 +102,7 @@ export function ModuleForm({
 
   return (
     <Card>
-      <CardHeader>
-        <CardTitle>
-          {initialData ? "Edit Module" : "Create New Module"}
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
+      <CardContent className="pt-6">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             {/* Programming Language */}

@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
     const data = validationResult.data;
 
     // Create quiz with questions and options in a transaction
-    const quiz = await prisma.$transaction(async (tx) => {
+    const quiz = await prisma.$transaction(async (tx: PrismaClient) => {
       // Create the quiz
       const newQuiz = await tx.mCQQuiz.create({
         data: {

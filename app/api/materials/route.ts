@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { PrismaClient } from "@codezest-academy/codezest-db";
-import { materialFormSchema } from "@/shared/lib/validations/material-schema";
+import { materialFormSchema, MaterialType, MaterialTypeValue } from "@/shared/lib/validations/material-schema";
 
 const prisma = new PrismaClient();
 
@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
       where: {
         deletedAt: null,
         ...(moduleId && { moduleId }),
-        ...(type && { type: type as any }),
+        ...(type && Object.values(MaterialType).includes(type as MaterialTypeValue) && { type: type as MaterialTypeValue }),
         ...(search && {
           title: { contains: search, mode: "insensitive" },
         }),
@@ -86,7 +86,7 @@ export async function POST(request: NextRequest) {
       data: {
         moduleId: data.moduleId,
         title: data.title,
-        type: data.type as any,
+        type: data.type,
         content: data.content,
         duration: data.duration || null,
         order: data.order,

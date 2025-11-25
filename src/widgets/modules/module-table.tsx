@@ -255,7 +255,7 @@ export function ModuleTable({ modules, onDelete }: ModuleTableProps) {
           <DialogHeader>
             <DialogTitle>Delete Module</DialogTitle>
             <DialogDescription>
-              Are you sure you want to delete "{moduleToDelete?.title}"? This
+              Are you sure you want to delete &quot;{moduleToDelete?.title}&quot;? This
               action cannot be undone.
             </DialogDescription>
           </DialogHeader>

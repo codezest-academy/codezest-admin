@@ -4,15 +4,18 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  /* Colors - Primary */
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-300: #60a5fa;
-  --color-primary-400: #3b82f6;
-  --color-primary-500: #2563eb;
-  --color-primary-700: #1e3a5f;
-  --color-primary-900: #0b1d3e;
-  --color-primary-950: #0a1628;
+  /* Colors - Primary (Deep Indigo) */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #4f46e5;
+  --color-primary-600: #4338ca;
+  --color-primary-700: #3730a3;
+  --color-primary-800: #312e81;
+  --color-primary-900: #1e1b4b;
+  --color-primary-950: #0f0d2e;
 
   /* Colors - Success */
   --color-success-50: #ecfdf5;
@@ -49,19 +52,24 @@
   --color-accent-orange: #f97316;
   --color-accent-pink: #ec4899;
 
-  /* Colors - Neutral */
+  /* Colors - Neutral (Warm Stone) */
   --color-neutral-0: #ffffff;
-  --color-neutral-50: #f8fafc;
-  --color-neutral-100: #f1f5f9;
-  --color-neutral-200: #e2e8f0;
-  --color-neutral-300: #cbd5e1;
-  --color-neutral-400: #94a3b8;
-  --color-neutral-500: #64748b;
-  --color-neutral-600: #475569;
-  --color-neutral-700: #334155;
-  --color-neutral-800: #1e293b;
-  --color-neutral-900: #172033;
-  --color-neutral-950: #0a0f1e;
+  --color-neutral-50: #fafaf9;
+  --color-neutral-100: #f5f5f4;
+  --color-neutral-200: #e7e5e4;
+  --color-neutral-300: #d6d3d1;
+  --color-neutral-400: #a8a29e;
+  --color-neutral-500: #78716c;
+  --color-neutral-600: #57534e;
+  --color-neutral-700: #44403c;
+  --color-neutral-800: #292524;
+  --color-neutral-900: #1c1917;
+  --color-neutral-950: #0c0a09;
+
+  /* Colors - Warm */
+  --color-warm-50: #fafaf9;
+  --color-warm-100: #f5f5f4;
+  --color-warm-200: #e7e5e4;
 
   /* Font Families */
   --font-primary: var(--font-primary);
@@ -106,8 +114,8 @@
     0 16px 32px rgba(10, 15, 30, 0.12), 0 24px 48px rgba(10, 15, 30, 0.08);
   --shadow-2xl: 0 12px 24px rgba(10, 15, 30, 0.12),
     0 24px 48px rgba(10, 15, 30, 0.14), 0 32px 64px rgba(10, 15, 30, 0.1);
-  --shadow-primary: 0 8px 24px rgba(37, 99, 235, 0.2);
-  --shadow-primary-lg: 0 12px 32px rgba(37, 99, 235, 0.25);
+  --shadow-primary: 0 8px 24px rgba(79, 70, 229, 0.2);
+  --shadow-primary-lg: 0 12px 32px rgba(79, 70, 229, 0.25);
   --shadow-success: 0 8px 24px rgba(16, 185, 129, 0.2);
   --shadow-success-lg: 0 12px 32px rgba(16, 185, 129, 0.25);
   --shadow-premium: 0 12px 32px rgba(212, 175, 55, 0.25);
@@ -117,14 +125,14 @@
   --shadow-inner-lg: inset 0 4px 8px rgba(10, 15, 30, 0.1);
 
   /* Semantic Mappings for Shadcn UI */
-  --color-background: var(--color-neutral-0);
-  --color-foreground: var(--color-neutral-950);
+  --color-background: var(--color-neutral-50);
+  --color-foreground: var(--color-neutral-900);
 
   --color-card: var(--color-neutral-0);
-  --color-card-foreground: var(--color-neutral-950);
+  --color-card-foreground: var(--color-neutral-900);
 
   --color-popover: var(--color-neutral-0);
-  --color-popover-foreground: var(--color-neutral-950);
+  --color-popover-foreground: var(--color-neutral-900);
 
   --color-primary: var(--color-primary-500);
   --color-primary-foreground: var(--color-neutral-0);
@@ -219,13 +227,13 @@
 }
 
 :root {
-  --sidebar: hsl(0 0% 98%);
+  --sidebar: hsl(0 0% 100%);
   --sidebar-foreground: hsl(240 5.3% 26.1%);
   --sidebar-primary: hsl(240 5.9% 10%);
   --sidebar-primary-foreground: hsl(0 0% 98%);
-  --sidebar-accent: hsl(240 4.8% 95.9%);
+  --sidebar-accent: hsl(214 32% 96%);
   --sidebar-accent-foreground: hsl(240 5.9% 10%);
-  --sidebar-border: hsl(220 13% 91%);
+  --sidebar-border: hsl(214 32% 91%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
 

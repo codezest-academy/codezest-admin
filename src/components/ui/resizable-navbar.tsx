@@ -71,7 +71,12 @@ export const Navbar = ({
     <motion.div
       className={cn("sticky top-0 z-40 w-full pointer-events-none", className)}
     >
-      <div className="pointer-events-auto w-full flex justify-center">
+      {/* Transparent blur mask to fade scrolling content - matches navbar width */}
+      <div className="absolute inset-x-0 top-0 flex justify-center pointer-events-none z-0">
+        <div className="h-20 backdrop-blur-md bg-gradient-to-b from-transparent via-transparent to-transparent w-[95%] md:w-[90%] lg:w-[86%] xl:w-[78%] 2xl:w-[68%] max-w-7xl rounded-3xl" />
+      </div>
+
+      <div className="pointer-events-auto w-full flex justify-center relative z-10">
         {React.Children.map(children, (child) =>
           React.isValidElement(child)
             ? React.cloneElement(
@@ -89,14 +94,13 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
   return (
     <motion.div
       animate={{
-        width: "60%",
         y: 12,
-        borderRadius: "2rem",
-        backgroundColor: "rgba(255, 255, 255, 0.8)",
-        backdropFilter: "blur(12px)",
+        borderRadius: "1.5rem",
+        background: "rgba(255, 255, 255, 0.85)", // pure white with transparency
+        backdropFilter: "blur(16px) saturate(180%)",
         boxShadow:
-          "0 8px 32px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.05)",
-        borderBottomColor: "transparent",
+          "0 8px 32px -8px rgba(79, 70, 229, 0.15), 0 0 0 1px rgba(79, 70, 229, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.8)",
+        borderBottomColor: "rgba(231, 229, 228, 0.5)", // neutral-200 with opacity
       }}
       transition={{
         type: "spring",
@@ -104,7 +108,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         damping: 30,
       }}
       className={cn(
-        "relative z-[60] flex items-center justify-between bg-card px-4 py-0 h-16 transition-colors duration-200 dark:bg-card border-b border-transparent min-w-[600px] dark:bg-neutral-950/80",
+        "relative z-[60] flex items-center justify-between px-4 sm:px-6 lg:px-8 py-0 h-14 sm:h-16 transition-all duration-200 w-[95%] md:w-[90%] lg:w-[86%] xl:w-[78%] 2xl:w-[68%] max-w-7xl",
         className
       )}
     >

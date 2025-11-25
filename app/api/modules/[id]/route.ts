@@ -15,7 +15,7 @@ export async function GET(
   try {
     const { id } = await params;
 
-    const module = await prisma.module.findUnique({
+    const moduleData = await prisma.module.findUnique({
       where: {
         id,
         deletedAt: null,
@@ -40,11 +40,11 @@ export async function GET(
       },
     });
 
-    if (!module) {
+    if (!moduleData) {
       return NextResponse.json({ error: "Module not found" }, { status: 404 });
     }
 
-    return NextResponse.json(module);
+    return NextResponse.json(moduleData);
   } catch (error) {
     console.error("Error fetching module:", error);
     return NextResponse.json(
@@ -110,7 +110,7 @@ export async function PUT(
     }
 
     // Update the module
-    const module = await prisma.module.update({
+    const updatedModule = await prisma.module.update({
       where: { id },
       data: {
         languageId: data.languageId,
@@ -131,7 +131,7 @@ export async function PUT(
       },
     });
 
-    return NextResponse.json(module);
+    return NextResponse.json(updatedModule);
   } catch (error) {
     console.error("Error updating module:", error);
     return NextResponse.json(

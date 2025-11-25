@@ -97,7 +97,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create the module
-    const module = await prisma.module.create({
+    const newModule = await prisma.module.create({
       data: {
         languageId: data.languageId,
         title: data.title,

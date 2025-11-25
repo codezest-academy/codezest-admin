@@ -109,20 +109,20 @@ A comprehensive, premium design system for an intelligent learning management an
 
 ## 🎨 Enhanced Color Palette
 
-### Primary Education Colors
+### Primary Education Colors - Deep Indigo ⭐
 
-_Trust, knowledge, and achievement_
+_Trust, knowledge, innovation, and achievement_
 
-| Token           | Name           | Hex     | RGB                | HSL                 | Usage                              |
-| --------------- | -------------- | ------- | ------------------ | ------------------- | ---------------------------------- |
-| **primary-950** | Midnight Navy  | #0A1628 | rgb(10, 22, 40)    | hsl(216, 60%, 10%)  | Deep backgrounds, dark mode        |
-| **primary-900** | Deep Scholar   | #0B1D3E | rgb(11, 29, 62)    | hsl(220, 70%, 14%)  | Headers, primary text, dark themes |
-| **primary-700** | Academic Navy  | #1E3A5F | rgb(30, 58, 95)    | hsl(213, 52%, 24%)  | Navigation bars, footers           |
-| **primary-500** | Knowledge Blue | #2563EB | rgb(37, 99, 235)   | hsl(221, 83%, 53%)  | Primary buttons, active states     |
-| **primary-400** | Learning Sky   | #3B82F6 | rgb(59, 130, 246)  | hsl(221, 83%, 60%)  | Links, interactive elements        |
-| **primary-300** | Clarity Blue   | #60A5FA | rgb(96, 165, 250)  | hsl(213, 94%, 68%)  | Hover states, highlights           |
-| **primary-100** | Frost          | #DBEAFE | rgb(219, 234, 254) | hsl(214, 95%, 93%)  | Light backgrounds, badges          |
-| **primary-50**  | Ice            | #EFF6FF | rgb(239, 246, 255) | hsl(214, 100%, 97%) | Subtle backgrounds                 |
+| Token           | Name            | Hex     | RGB                | HSL                 | Usage                              |
+| --------------- | --------------- | ------- | ------------------ | ------------------- | ---------------------------------- |
+| **primary-950** | Midnight Indigo | #0F0D2E | rgb(15, 13, 46)    | hsl(246, 56%, 12%)  | Deep backgrounds, dark mode        |
+| **primary-900** | Deep Scholar    | #1E1B4B | rgb(30, 27, 75)    | hsl(244, 47%, 20%)  | Headers, primary text, dark themes |
+| **primary-700** | Academic Indigo | #3730A3 | rgb(55, 48, 163)   | hsl(244, 54%, 41%)  | Navigation bars, footers           |
+| **primary-500** | Deep Indigo     | #4F46E5 | rgb(79, 70, 229)   | hsl(243, 75%, 59%)  | Primary buttons, active states     |
+| **primary-400** | Bright Indigo   | #818CF8 | rgb(129, 140, 248) | hsl(234, 89%, 74%)  | Links, interactive elements        |
+| **primary-300** | Light Indigo    | #A5B4FC | rgb(165, 180, 252) | hsl(230, 94%, 82%)  | Hover states, highlights           |
+| **primary-100** | Frost Indigo    | #E0E7FF | rgb(224, 231, 255) | hsl(226, 100%, 94%) | Light backgrounds, badges          |
+| **primary-50**  | Ice Indigo      | #EEF2FF | rgb(238, 242, 255) | hsl(226, 100%, 97%) | Subtle backgrounds                 |
 
 ### Premium Tier Colors ✨ NEW
 

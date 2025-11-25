@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Button } from "@/ui/button";
 import { QuizForm } from "@/widgets/quizzes/quiz-form";
 import { Skeleton } from "@/ui/skeleton";
-import type { QuizFormData } from "@/shared/lib/validations/quiz-schema";
+import type { QuizFormData, QuizQuestionData, QuizOptionData } from "@/shared/lib/validations/quiz-schema";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -45,13 +45,13 @@ export default function EditQuizPage({ params }: PageProps) {
             description: quiz.description || "",
             passingScore: quiz.passingScore,
             timeLimit: quiz.timeLimit,
-            questions: quiz.questions.map((q: any) => ({
+            questions: quiz.questions.map((q: QuizQuestionData) => ({
               id: q.id,
               question: q.question,
               explanation: q.explanation || "",
               order: q.order,
               points: q.points,
-              options: q.options.map((o: any) => ({
+              options: q.options.map((o: QuizOptionData) => ({
                 id: o.id,
                 optionText: o.optionText,
                 isCorrect: o.isCorrect,

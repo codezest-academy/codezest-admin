@@ -288,7 +288,7 @@ export function MaterialTable({ materials, onDelete }: MaterialTableProps) {
           <DialogHeader>
             <DialogTitle>Delete Material</DialogTitle>
             <DialogDescription>
-              Are you sure you want to delete "{materialToDelete?.title}"? This
+              Are you sure you want to delete &quot;{materialToDelete?.title}&quot;? This
               action cannot be undone.
             </DialogDescription>
           </DialogHeader>

@@ -7,18 +7,18 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/ui/card";
-import { Button } from "@/ui/button";
-import { Input } from "@/ui/input";
-import { Label } from "@/ui/label";
-import { Checkbox } from "@/ui/checkbox";
+} from "@/components/ui/primitives/card";
+import { Button } from "@/components/ui/primitives/button";
+import { Input } from "@/components/ui/primitives/input";
+import { Label } from "@/components/ui/primitives/label";
+import { Checkbox } from "@/components/ui/primitives/checkbox";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/ui/select";
+} from "@/components/ui/primitives/select";
 import {
   Dialog,
   DialogContent,
@@ -26,7 +26,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/ui/dialog";
+} from "@/components/ui/primitives/dialog";
 import {
   Sheet,
   SheetContent,
@@ -34,7 +34,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/ui/sheet";
+} from "@/components/ui/primitives/sheet";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -42,7 +42,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/ui/dropdown-menu";
+} from "@/components/ui/primitives/dropdown-menu";
 import {
   Table,
   TableBody,
@@ -51,16 +51,16 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/ui/table";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui/tabs";
+} from "@/components/ui/primitives/table";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/primitives/tabs";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/ui/tooltip";
-import { Separator } from "@/ui/separator";
-import { Skeleton } from "@/ui/skeleton";
+} from "@/components/ui/primitives/tooltip";
+import { Separator } from "@/components/ui/primitives/separator";
+import { Skeleton } from "@/components/ui/primitives/skeleton";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -68,7 +68,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/ui/breadcrumb";
+} from "@/components/ui/primitives/breadcrumb";
 import {
   ChevronRight,
   Home,

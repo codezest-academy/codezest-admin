@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import Link from "next/link";
 
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import { ModuleForm } from "@/widgets/modules/module-form";
 import type { ModuleFormData } from "@/shared/lib/validations/module-schema";
 import {
@@ -15,7 +15,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/ui/breadcrumb";
+} from "@/components/ui/primitives/breadcrumb";
 
 export default function NewModulePage() {
   const router = useRouter();

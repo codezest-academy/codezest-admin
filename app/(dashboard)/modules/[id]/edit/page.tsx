@@ -6,9 +6,9 @@ import { toast } from "sonner";
 import { ArrowLeft, Loader2 } from "lucide-react";
 import Link from "next/link";
 
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import { ModuleForm } from "@/widgets/modules/module-form";
-import { Skeleton } from "@/ui/skeleton";
+import { Skeleton } from "@/components/ui/primitives/skeleton";
 import type { ModuleFormData } from "@/shared/lib/validations/module-schema";
 
 interface PageProps {

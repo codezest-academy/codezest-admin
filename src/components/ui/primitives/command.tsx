@@ -11,7 +11,7 @@ import {
   DialogContent,
   DialogTitle,
   DialogDescription,
-} from "@/ui/dialog";
+} from "@/components/ui/primitives/dialog";
 
 const Command = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive>,

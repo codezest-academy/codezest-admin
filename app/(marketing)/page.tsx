@@ -1,4 +1,4 @@
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import {
   BookOpen,
   Users,
@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { WobbleCard } from "@/components/ui/wobble-card";
-import WorkflowDiagram from "../../components/workflow/WorkflowDiagram";
+import { WobbleCard } from "@/components/ui/effects/wobble-card";
+import WorkflowDiagram from "@/features/workflow/components/WorkflowDiagram";
 
 export default function Home() {
   return (

@@ -17,9 +17,9 @@ import {
   User,
   Settings,
 } from "lucide-react";
-import { Button } from "@/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/ui/avatar";
-import { Separator } from "@/ui/separator";
+import { Button } from "@/components/ui/primitives/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/primitives/avatar";
+import { Separator } from "@/components/ui/primitives/separator";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -27,14 +27,14 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/ui/breadcrumb";
+} from "@/components/ui/primitives/breadcrumb";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetDescription,
-} from "@/ui/sheet";
+} from "@/components/ui/primitives/sheet";
 import {
   Command,
   CommandDialog,
@@ -43,7 +43,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/ui/command";
+} from "@/components/ui/primitives/command";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -52,10 +52,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
   DropdownMenuGroup,
-} from "@/ui/dropdown-menu";
+} from "@/components/ui/primitives/dropdown-menu";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { Navbar, NavBody } from "@/components/ui/resizable-navbar";
+import { Navbar, NavBody } from "@/components/ui/effects/resizable-navbar";
 
 const searchItems = [
   { title: "Dashboard", url: "/dashboard", icon: FileText },

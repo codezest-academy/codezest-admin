@@ -5,17 +5,17 @@ import Link from "next/link";
 import { Plus, Search } from "lucide-react";
 import { toast } from "sonner";
 
-import { Button } from "@/ui/button";
-import { Input } from "@/ui/input";
+import { Button } from "@/components/ui/primitives/button";
+import { Input } from "@/components/ui/primitives/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/ui/select";
+} from "@/components/ui/primitives/select";
 import { MaterialTable } from "@/widgets/materials/material-table";
-import { Skeleton } from "@/ui/skeleton";
+import { Skeleton } from "@/components/ui/primitives/skeleton";
 
 interface Material {
   id: string;

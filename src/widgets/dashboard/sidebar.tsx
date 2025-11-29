@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import { ChevronsLeft, ChevronsRight } from "lucide-react";
 import { SidebarNavContent } from "./sidebar-nav-content";
 

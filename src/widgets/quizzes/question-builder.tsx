@@ -3,9 +3,9 @@
 import { useFieldArray, Control } from "react-hook-form";
 import { Plus, Trash2, GripVertical } from "lucide-react";
 
-import { Button } from "@/ui/button";
-import { Input } from "@/ui/input";
-import { Checkbox } from "@/ui/checkbox";
+import { Button } from "@/components/ui/primitives/button";
+import { Input } from "@/components/ui/primitives/input";
+import { Checkbox } from "@/components/ui/primitives/checkbox";
 import {
   FormControl,
   FormField,
@@ -13,9 +13,9 @@ import {
   FormLabel,
   FormMessage,
   FormDescription,
-} from "@/ui/form";
-import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
-import { Badge } from "@/ui/badge";
+} from "@/components/ui/primitives/form";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/primitives/card";
+import { Badge } from "@/components/ui/primitives/badge";
 import type { QuizFormData } from "@/shared/lib/validations/quiz-schema";
 import {
   getOptionLabel,

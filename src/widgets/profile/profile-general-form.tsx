@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2 } from "lucide-react";
 
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import {
   Form,
   FormControl,
@@ -13,9 +13,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/ui/form";
-import { Input } from "@/ui/input";
-import { Avatar, AvatarFallback, AvatarImage } from "@/ui/avatar";
+} from "@/components/ui/primitives/form";
+import { Input } from "@/components/ui/primitives/input";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/primitives/avatar";
 import {
   profileGeneralSchema,
   type ProfileGeneralData,

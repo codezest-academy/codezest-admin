@@ -13,7 +13,7 @@ import {
   Clock,
 } from "lucide-react";
 
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import {
   Table,
   TableBody,
@@ -21,14 +21,14 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/ui/table";
+} from "@/components/ui/primitives/table";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/ui/dropdown-menu";
-import { Badge } from "@/ui/badge";
+} from "@/components/ui/primitives/dropdown-menu";
+import { Badge } from "@/components/ui/primitives/badge";
 import {
   Dialog,
   DialogContent,
@@ -36,7 +36,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/ui/dialog";
+} from "@/components/ui/primitives/dialog";
 
 interface Material {
   id: string;

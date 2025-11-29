@@ -4,15 +4,15 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { User, Briefcase, Link2, Lock } from "lucide-react";
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/primitives/tabs";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/ui/card";
-import { Skeleton } from "@/ui/skeleton";
+} from "@/components/ui/primitives/card";
+import { Skeleton } from "@/components/ui/primitives/skeleton";
 import { ProfileGeneralForm } from "@/widgets/profile/profile-general-form";
 import { ProfileProfessionalForm } from "@/widgets/profile/profile-professional-form";
 import { ProfileSocialForm } from "@/widgets/profile/profile-social-form";

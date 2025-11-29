@@ -1,15 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "@/ui/button";
-import { Navbar, NavBody } from "@/components/ui/resizable-navbar";
+import { Button } from "@/components/ui/primitives/button";
+import { Navbar, NavBody } from "@/components/ui/effects/resizable-navbar";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetDescription,
-} from "@/ui/sheet";
+} from "@/components/ui/primitives/sheet";
 import { Menu, Zap, CreditCard, Users, FileText, X } from "lucide-react";
 import { useState, useRef } from "react";
 

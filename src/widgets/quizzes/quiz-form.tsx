@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2 } from "lucide-react";
 
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import {
   Form,
   FormControl,
@@ -14,16 +14,16 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/ui/form";
-import { Input } from "@/ui/input";
+} from "@/components/ui/primitives/form";
+import { Input } from "@/components/ui/primitives/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/ui/select";
-import { Card, CardContent, CardHeader, CardTitle } from "@/ui/card";
+} from "@/components/ui/primitives/select";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/primitives/card";
 import { QuestionBuilder } from "./question-builder";
 import {
   quizFormSchema,

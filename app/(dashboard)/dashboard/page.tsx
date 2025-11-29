@@ -6,7 +6,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/ui/card";
+} from "@/components/ui/primitives/card";
 import {
   Users,
   DollarSign,
@@ -22,7 +22,7 @@ import {
   YAxis,
   Tooltip,
 } from "recharts";
-import { Avatar, AvatarFallback, AvatarImage } from "@/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/primitives/avatar";
 
 const data = [
   { name: "Jan", total: 1200 },

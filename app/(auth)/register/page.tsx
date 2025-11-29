@@ -12,9 +12,9 @@ import { useState } from "react";
 import { authService } from "@/lib/services/auth.service";
 import { oauthService } from "@/lib/services/oauth.service";
 import { handleApiError } from "@/lib/utils/error-handler.util";
-import { PasswordStrengthIndicator } from "@/components/auth/PasswordStrengthIndicator";
+import { PasswordStrengthIndicator } from "@/features/auth/components/PasswordStrengthIndicator";
 
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import {
   Form,
   FormControl,
@@ -22,9 +22,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/ui/form";
-import { Input } from "@/ui/input";
-import { Checkbox } from "@/ui/checkbox";
+} from "@/components/ui/primitives/form";
+import { Input } from "@/components/ui/primitives/input";
+import { Checkbox } from "@/components/ui/primitives/checkbox";
 
 const formSchema = z
   .object({

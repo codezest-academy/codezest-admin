@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Check, X } from "lucide-react";
 import { calculatePasswordStrength } from "@/lib/utils/password-strength.util";
 import { cn } from "@/shared/lib/utils";
-import { Progress } from "@/ui/ui/progress";
+import { Progress } from "@/components/ui/primitives/progress";
 
 interface PasswordStrengthIndicatorProps {
   password: string;

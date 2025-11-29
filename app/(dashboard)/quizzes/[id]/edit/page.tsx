@@ -6,9 +6,9 @@ import { toast } from "sonner";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import { QuizForm } from "@/widgets/quizzes/quiz-form";
-import { Skeleton } from "@/ui/skeleton";
+import { Skeleton } from "@/components/ui/primitives/skeleton";
 import type { QuizFormData, QuizQuestionData, QuizOptionData } from "@/shared/lib/validations/quiz-schema";
 
 interface PageProps {

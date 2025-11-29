@@ -6,10 +6,10 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/ui/card";
-import { Button } from "@/ui/button";
-import { Badge } from "@/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "@/ui/avatar";
+} from "@/components/ui/primitives/card";
+import { Button } from "@/components/ui/primitives/button";
+import { Badge } from "@/components/ui/primitives/badge";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/primitives/avatar";
 import {
   CheckCircle,
   AlertCircle,

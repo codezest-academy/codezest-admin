@@ -6,7 +6,7 @@ import { toast } from "sonner";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
-import { Button } from "@/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import { MaterialForm } from "@/widgets/materials/material-form";
 import type { MaterialFormData } from "@/shared/lib/validations/material-schema";
 

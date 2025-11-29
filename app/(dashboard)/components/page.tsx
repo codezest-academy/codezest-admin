@@ -557,7 +557,7 @@ export default function ComponentsPage() {
                 </TabsContent>
               </Tabs>
               <p className="text-xs text-neutral-500 mt-4">
-                Use for organizing related content that doesn't need to be
+                Use for organizing related content that doesn&apos;t need to be
                 viewed simultaneously
               </p>
             </CardContent>

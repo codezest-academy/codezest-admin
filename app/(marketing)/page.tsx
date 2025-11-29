@@ -9,7 +9,9 @@ import {
   Globe,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { WobbleCard } from "@/components/ui/wobble-card";
+import WorkflowDiagram from "../../components/workflow/WorkflowDiagram";
 
 export default function Home() {
   return (
@@ -73,10 +75,11 @@ export default function Home() {
               </div>
             </div>
             {/* We will replace this with the actual screenshot later */}
-            <img
+            <Image
               src="/dashboard-preview.png"
               alt="CodeZest Dashboard Interface"
-              className="w-full h-full object-cover opacity-50 group-hover:opacity-75 transition-opacity"
+              fill
+              className="object-cover opacity-50 group-hover:opacity-75 transition-opacity"
             />
           </div>
         </div>
@@ -197,9 +200,9 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-neutral-50">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 font-display mb-4">
               How It Works
             </h2>
@@ -209,72 +212,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                {
-                  step: "01",
-                  title: "Create Your Account",
-                  description:
-                    "Sign up in seconds with your email. No credit card needed, no commitments.",
-                  icon: Users,
-                  color: "bg-primary-50",
-                  textColor: "text-primary-600",
-                },
-                {
-                  step: "02",
-                  title: "Choose Your Path",
-                  description:
-                    "Browse our courses and select the programming language or topic you want to master.",
-                  icon: BookOpen,
-                  color: "bg-primary-100",
-                  textColor: "text-primary-700",
-                },
-                {
-                  step: "03",
-                  title: "Learn & Practice",
-                  description:
-                    "Work through interactive lessons, complete quizzes, and get instant AI feedback on your code.",
-                  icon: Zap,
-                  color: "bg-primary-200",
-                  textColor: "text-primary-800",
-                },
-                {
-                  step: "04",
-                  title: "Earn & Showcase",
-                  description:
-                    "Complete courses, earn certificates, and build your portfolio to show employers.",
-                  icon: Award,
-                  color: "bg-success-100",
-                  textColor: "text-success-700",
-                },
-              ].map((item, i) => (
-                <div key={i} className="relative">
-                  <div className="flex gap-6">
-                    <div className="shrink-0">
-                      <div
-                        className={`h-16 w-16 rounded-2xl ${item.color} flex items-center justify-center shadow-sm`}
-                      >
-                        <item.icon className={`h-8 w-8 ${item.textColor}`} />
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <div className="text-sm font-bold text-neutral-400 mb-2">
-                        STEP {item.step}
-                      </div>
-                      <h3 className="text-xl font-bold text-neutral-900 mb-3">
-                        {item.title}
-                      </h3>
-                      <p className="text-neutral-600 leading-relaxed">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                  {i < 3 && (
-                    <div className="hidden md:block absolute top-20 left-8 w-0.5 h-16 bg-gradient-to-b from-neutral-200 to-transparent" />
-                  )}
-                </div>
-              ))}
-            </div>
+            <WorkflowDiagram />
           </div>
         </div>
       </section>
@@ -296,27 +234,9 @@ export default function Home() {
               <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
                 We combine cutting-edge AI technology with proven pedagogical
                 methods to create a learning experience that adapts to you.
-                Whether you're writing your first line of code or architecting
-                complex systems, CodeZest grows with you.
+                Whether you&apos;re writing your first line of code or
+                architecting complex systems, CodeZest grows with you.
               </p>
-              <div className="grid grid-cols-2 gap-8">
-                <div>
-                  <div className="text-3xl font-bold text-primary-600 mb-1">
-                    50k+
-                  </div>
-                  <div className="text-sm text-neutral-500">
-                    Active Learners
-                  </div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-primary-600 mb-1">
-                    100+
-                  </div>
-                  <div className="text-sm text-neutral-500">
-                    Enterprise Partners
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="flex-1 relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary-100 to-transparent rounded-3xl transform rotate-3 scale-105 -z-10" />
@@ -325,17 +245,17 @@ export default function Home() {
                   <Activity className="h-32 w-32" />
                 </div>
                 <div className="font-mono text-sm text-primary-300 mb-4">
-                  // Mission Statement
+                  {"// Mission Statement"}
                 </div>
                 <p className="text-xl font-medium leading-relaxed">
-                  "To democratize software engineering education by providing
-                  accessible, high-quality, and intelligent learning tools to
-                  everyone, everywhere."
+                  &quot;To democratize software engineering education by
+                  providing accessible, high-quality, and intelligent learning
+                  tools to everyone, everywhere.&quot;
                 </p>
                 <div className="mt-8 flex items-center gap-4">
                   <div className="h-10 w-10 rounded-full bg-primary-500" />
                   <div>
-                    <div className="font-bold">Alex Johnson</div>
+                    <div className="font-bold">CVS CHARAN</div>
                     <div className="text-sm text-neutral-400">
                       Founder & CEO
                     </div>

@@ -27,7 +27,8 @@ import type {
 interface UserProfile {
   id: string;
   email: string;
-  name: string;
+  firstName: string;
+  lastName: string;
   role: string;
   emailVerified: boolean;
   createdAt: string;
@@ -106,7 +107,8 @@ export default function ProfileSettingsPage() {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: profile?.name,
+          firstName: profile?.firstName,
+          lastName: profile?.lastName,
           email: profile?.email,
           ...data,
           ...(profile?.profile
@@ -145,7 +147,8 @@ export default function ProfileSettingsPage() {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: profile?.name,
+          firstName: profile?.firstName,
+          lastName: profile?.lastName,
           email: profile?.email,
           ...data,
           ...(profile?.profile
@@ -266,7 +269,8 @@ export default function ProfileSettingsPage() {
             <CardContent>
               <ProfileGeneralForm
                 initialData={{
-                  name: profile.name,
+                  firstName: profile.firstName,
+                  lastName: profile.lastName,
                   email: profile.email,
                   bio: profile.profile?.bio || "",
                   avatar: profile.profile?.avatar || "",

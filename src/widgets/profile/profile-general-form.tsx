@@ -35,7 +35,8 @@ export function ProfileGeneralForm({
   const form = useForm<ProfileGeneralData>({
     resolver: zodResolver(profileGeneralSchema),
     defaultValues: initialData || {
-      name: "",
+      firstName: "",
+      lastName: "",
       email: "",
       bio: "",
       avatar: "",
@@ -44,7 +45,9 @@ export function ProfileGeneralForm({
   });
 
   const avatarUrl = form.watch("avatar");
-  const userName = form.watch("name");
+  const firstName = form.watch("firstName");
+  const lastName = form.watch("lastName");
+  const userName = `${firstName || ""} ${lastName || ""}`.trim();
 
   return (
     <Form {...form}>
@@ -80,23 +83,37 @@ export function ProfileGeneralForm({
           </div>
         </div>
 
-        {/* Name */}
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Full Name</FormLabel>
-              <FormControl>
-                <Input placeholder="John Doe" {...field} />
-              </FormControl>
-              <FormDescription>
-                Your full name as it will appear on your profile
-              </FormDescription>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+        <div className="grid grid-cols-2 gap-4">
+          {/* First Name */}
+          <FormField
+            control={form.control}
+            name="firstName"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>First Name</FormLabel>
+                <FormControl>
+                  <Input placeholder="John" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          {/* Last Name */}
+          <FormField
+            control={form.control}
+            name="lastName"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Last Name</FormLabel>
+                <FormControl>
+                  <Input placeholder="Doe" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </div>
 
         {/* Email */}
         <FormField

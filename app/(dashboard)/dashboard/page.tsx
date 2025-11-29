@@ -74,7 +74,7 @@ export default function DashboardPage() {
       <div>
         <h1 className="text-4xl font-bold text-neutral-900">Dashboard</h1>
         <p className="text-neutral-600 mt-2">
-          Welcome back! Here's your overview.
+          Welcome back! Here&apos;s your overview.
         </p>
       </div>
 

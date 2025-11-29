@@ -4,10 +4,14 @@ import { z } from "zod";
  * Validation schema for general profile information
  */
 export const profileGeneralSchema = z.object({
-  name: z
+  firstName: z
     .string()
-    .min(2, "Name must be at least 2 characters")
-    .max(100, "Name must not exceed 100 characters"),
+    .min(2, "First name must be at least 2 characters")
+    .max(50, "First name must not exceed 50 characters"),
+  lastName: z
+    .string()
+    .min(2, "Last name must be at least 2 characters")
+    .max(50, "Last name must not exceed 50 characters"),
   email: z.string().email("Please enter a valid email address"),
   bio: z
     .string()

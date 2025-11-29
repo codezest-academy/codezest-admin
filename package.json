@@ -6,13 +6,15 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "migrate:dev": "npx prisma migrate dev --schema=node_modules/@codezest-academy/codezest-db/prisma/schema.prisma",
+    "db:migrate:deploy": "prisma migrate deploy --schema=node_modules/@codezest-academy/codezest-db/prisma/schema.prisma",
+    "db:generate": "prisma generate --schema=node_modules/@codezest-academy/codezest-db/prisma/schema.prisma",
     "lint": "eslint"
   },
   "dependencies": {
     "@codezest-academy/codezest-cache": "^1.0.1",
-    "@codezest-academy/codezest-db": "^1.0.5",
+    "@codezest-academy/codezest-db": "^2.0.0",
     "@hookform/resolvers": "^3.9.1",
+    "@prisma/client": "5.20.0",
     "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-checkbox": "^1.3.3",
     "@radix-ui/react-dialog": "^1.1.15",
@@ -48,6 +50,8 @@
     "react-hook-form": "^7.54.2",
     "react-hot-toast": "^2.6.0",
     "react-wrap-balancer": "^1.1.1",
+    "react-xarrows": "^2.0.2",
+    "reactflow": "^11.11.4",
     "recharts": "^3.5.0",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.4.0",
@@ -66,7 +70,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.6",
-    "prisma": "^6.19.0",
+    "prisma": "5.20.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
